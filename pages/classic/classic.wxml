@@ -1,2 +1,7 @@
 <!--pages/classic/classic.wxml-->
 <s-like></s-like>
+<s-like></s-like>
+<s-like></s-like>
+<!-- <view wx:for="brandList"  wx:key="index">
+  <view>{{item.brandName}}</view>
+</view> -->
