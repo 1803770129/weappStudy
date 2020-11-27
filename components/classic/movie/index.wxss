@@ -1,0 +1,13 @@
+/* components/classic/movie/index.wxss */
+.brand-container{
+  padding: 20rpx;
+}
+.image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.brands{
+  display: flex;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+}

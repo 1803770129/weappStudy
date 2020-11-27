@@ -1,7 +1,5 @@
 <!--pages/classic/classic.wxml-->
+<s-like count="{{11}}" like="{{true}}" bind:like="onLike"></s-like>
 <s-like></s-like>
 <s-like></s-like>
-<s-like></s-like>
-<!-- <view wx:for="brandList"  wx:key="index">
-  <view>{{item.brandName}}</view>
-</view> -->
+<!-- <s-brands brandList="{{brandList}}"></s-brands> -->

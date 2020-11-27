@@ -35,11 +35,11 @@ class HTTP{
             if(code.toString().startsWith('0')){
               // 将res返回给调用方
               params.success && params.success(res.data)
-              wx.showToast({
-                title: res.data.msg+' - success',
-                icon:'none',
-                duration:2000
-              })
+              // wx.showToast({
+              //   title: res.data.msg+' - success',
+              //   icon:'none',
+              //   duration:2000
+              // })
             }else{
               let error_code=res.data.code
                 this._show_error(error_code)

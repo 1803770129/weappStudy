@@ -1,0 +1,8 @@
+<!--components/classic/movie/index.wxml-->
+<view class="brand-container">
+  <text>汽车品牌</text>
+  <view wx:for="{{brandList}}" wx:for-item="item" wx:for-index="item.brandId" class="brands">
+    <image class="image" src="{{item.brandIcon!==''?'https://oe.sopei.cn/static/img/brandIcon/'+item.brandIcon:''}}"></image>
+    <view>{{item.brandName}}</view>
+  </view>
+</view>

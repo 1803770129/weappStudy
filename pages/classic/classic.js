@@ -1,26 +1,24 @@
 // pages/classic/classic.js
-import {HTTP} from '../../utils/http.js'
-let http = new HTTP()
+import {Classic} from '../../models/classic.js'
+let classic = new Classic()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    // brandList:[]
+    brandList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(http)
-    http.request({
-      url:'brands',
-      success:(res)=>{
-        console.log(res)
-      }
-    })
+      classic.getBrands((res)=>{
+          this.setData({
+            brandList:res.data
+          })
+      })
   },
 
   /**
@@ -70,5 +68,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onLike:function(evt){
+    let behavior = evt.detail.behavior
   }
 })
