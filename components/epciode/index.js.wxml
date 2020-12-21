@@ -1,0 +1,4 @@
+<!--components/epciode/index.js.wxml-->
+<view>{{index}}</view>
+<view>{{year}}</view>
+<view>{{month}}</view>

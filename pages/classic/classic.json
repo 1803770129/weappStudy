@@ -1,6 +1,6 @@
 {
   "usingComponents": {
     "s-like":"/components/like/index",
-    "s-brands":"/components/classic/movie"
+    "s-epciode":"/components/epciode/index"
   }
 }

@@ -2,4 +2,5 @@
 <s-like count="{{11}}" like="{{true}}" bind:like="onLike"></s-like>
 <s-like></s-like>
 <s-like></s-like>
+<s-epciode></s-epciode>
 <!-- <s-brands brandList="{{brandList}}"></s-brands> -->
