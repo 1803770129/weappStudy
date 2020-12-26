@@ -1,0 +1,31 @@
+/* components/music/index.wxss */
+.main{
+  position: relative;
+  width: 100%;
+}
+.bgSrc{
+  width: 460rpx;
+  height: 403rpx;
+}
+.playSrc{
+  position: absolute;
+  top: 145rpx;
+  width: 100rpx;
+  left: 150rpx;
+  height: 100rpx;
+}
+.music{
+  width: 44rpx;
+  height: 107rpx;
+}
+
+.bgSrcMian{
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 1px solid #aaa;
+}
+.content{
+  
+}

@@ -1,0 +1,9 @@
+<!--components/music/index.wxml-->
+<view class="main">
+  <view class="bgSrcMian">
+    <image src="{{bgSrc}}" class="bgSrc" />
+  </view>
+  <image src="{{playSrc}}" class="playSrc" />
+  <image src="images/music@tag.png" class="music" />
+  <text class="content">{{content}}</text>
+</view>

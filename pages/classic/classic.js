@@ -7,13 +7,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    brandList:[]
+    classic:{},
+    first:true,
+    latest:false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({
+      classic:{
+        title:'你不知道的javascript(上卷)'
+      }
+    })
       classic.getBrands((res)=>{
           this.setData({
             brandList:res.data
@@ -71,5 +78,15 @@ Page({
   },
   onLike:function(evt){
     let behavior = evt.detail.behavior
+  },
+  onLeft(evt){
+    this.setData({
+      latest:evt.detail.latest
+    })
+  },
+  onRight(evt){
+    this.setData({
+      first:evt.detail.first
+    })
   }
 })

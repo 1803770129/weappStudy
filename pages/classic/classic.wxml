@@ -1,6 +1,13 @@
 <!--pages/classic/classic.wxml-->
-<s-like count="{{11}}" like="{{true}}" bind:like="onLike"></s-like>
-<s-like></s-like>
-<s-like></s-like>
-<s-epciode></s-epciode>
+<view class="container">
+  <view class="heart">
+    <s-like count="{{11}}" like="{{true}}" bind:like="onLike"></s-like>
+    <s-like></s-like>
+    <s-like></s-like>
+  </view>
+  <s-movie></s-movie>
+  <s-music content="ko~ko~da~yo~!"></s-music>
+  <s-navi class="navi" title="{{classic.title}}" bind:left="onLeft" bind:right="onRight" first="{{first}}" latest="{{latest}}"></s-navi>
+</view>
+
 <!-- <s-brands brandList="{{brandList}}"></s-brands> -->

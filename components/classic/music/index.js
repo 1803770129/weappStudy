@@ -1,4 +1,4 @@
-// components/classic/movie/index.js
+// components/music/index.js
 import {classicBeh} from '../classic_beh.js'
 Component({
   /**
@@ -6,22 +6,23 @@ Component({
    */
   behaviors:[classicBeh],
   properties: {
-    brandList:{
-      type:Array,
-      value:[]
-    }
   },
-  // behavior 定义共同的行为
+  attached(){
+    console.log(this.properties.content);
+  },
   /**
    * 组件的初始数据
    */
   data: {
-
+    pauseSrc:'images/player@waitting.png',
+    playSrc:'images/player@playing.png',
+    bgSrc:'images/baijin.jpg'
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
+
   }
 })

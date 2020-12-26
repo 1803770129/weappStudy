@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "s-like":"/components/like/index",
-    "s-epciode":"/components/epciode/index"
+    "s-navi":"/components/navi/index",
+    "s-music":"/components/classic/music/index",
+    "s-movie":"/components/classic/movie/index"
   }
 }

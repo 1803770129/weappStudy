@@ -4,7 +4,13 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    index:Number
+    index:{
+      type:Number,
+      value:10,
+      observer:function(e){
+        console.log(e)
+      }
+    }
   },
 
   /**
