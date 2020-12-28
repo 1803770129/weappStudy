@@ -8,7 +8,7 @@ Component({
   properties: {
   },
   attached(){
-    console.log(this.properties.content);
+    // console.log(this.properties.content);
   },
   /**
    * 组件的初始数据
